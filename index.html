@@ -15,7 +15,6 @@
             padding-bottom: 80px;
         }
 
-        /* ===== ШАПКА С ГАМБУРГЕРОМ ===== */
         .app-header {
             background: linear-gradient(135deg, #0f0f18, #0a0a0a);
             border-bottom: 1px solid #1a1a1a;
@@ -36,7 +35,6 @@
             cursor: pointer;
             padding: 4px 8px;
             line-height: 1;
-            transition: color 0.2s;
         }
         .app-header .hamburger:hover { color: #1877f2; }
         .app-header .logo {
@@ -78,7 +76,6 @@
         }
         .app-header .header-admin-badge.show { display: inline-block; }
 
-        /* ===== МЕНЮ (САЙДБАР) ===== */
         .app-sidebar {
             position: fixed;
             top: 0;
@@ -93,7 +90,6 @@
             padding: 16px 12px;
         }
         .app-sidebar.open { left: 0; }
-
         .app-sidebar .sidebar-header {
             display: flex;
             justify-content: space-between;
@@ -101,11 +97,7 @@
             padding-bottom: 12px;
             border-bottom: 1px solid #222;
         }
-        .app-sidebar .sidebar-header .sidebar-title {
-            color: #1877f2;
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
+        .app-sidebar .sidebar-header .sidebar-title { color: #1877f2; font-weight: 700; font-size: 1.1rem; }
         .app-sidebar .sidebar-header .sidebar-close {
             background: none;
             border: none;
@@ -114,7 +106,6 @@
             cursor: pointer;
         }
         .app-sidebar .sidebar-header .sidebar-close:hover { color: #fff; }
-
         .app-sidebar .sidebar-user {
             margin: 12px 0;
             padding: 8px 12px;
@@ -128,7 +119,6 @@
         .app-sidebar .sidebar-user .avatar { font-size: 1.2rem; }
         .app-sidebar .sidebar-user .name { font-weight: 600; font-size: 0.9rem; }
         .app-sidebar .sidebar-user .status { font-size: 0.6rem; color: #666; }
-
         .app-sidebar .sidebar-nav {
             display: flex;
             flex-direction: column;
@@ -158,7 +148,6 @@
             color: #fff;
         }
         .app-sidebar .sidebar-nav .nav-item .nav-icon { font-size: 1.2rem; }
-
         .app-sidebar .sidebar-rooms {
             margin-top: 12px;
             padding-top: 12px;
@@ -208,7 +197,6 @@
             padding: 8px 12px;
             text-align: center;
         }
-
         .app-sidebar .sidebar-footer {
             margin-top: 16px;
             padding-top: 12px;
@@ -225,12 +213,10 @@
             font-size: 0.75rem;
             font-weight: 700;
             cursor: pointer;
-            transition: background 0.2s;
         }
         .app-sidebar .sidebar-footer .create-room-btn:hover { background: #4a9eff; }
         .app-sidebar .sidebar-footer .create-room-btn.show { display: block; }
 
-        /* ===== ОВЕРЛЕЙ ===== */
         .app-overlay {
             position: fixed;
             top: 0;
@@ -243,19 +229,14 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
-        .app-overlay.show {
-            display: block;
-            opacity: 1;
-        }
+        .app-overlay.show { display: block; opacity: 1; }
 
-        /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
         .app-content {
             max-width: 800px;
             margin: 0 auto;
             padding: 0 12px 20px;
         }
 
-        /* ===== ЛЕНТА ===== */
         .feed-card {
             background: #0f0f18;
             border: 1px solid #1a1a1a;
@@ -272,11 +253,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        .feed-card .feed-header .f-title {
-            font-weight: 700;
-            font-size: 0.85rem;
-            color: #fff;
-        }
+        .feed-card .feed-header .f-title { font-weight: 700; font-size: 0.85rem; color: #fff; }
         .feed-card .feed-header .f-title span { color: #ff8c00; }
         .feed-card .feed-header .f-status {
             font-size: 0.6rem;
@@ -290,18 +267,13 @@
             padding: 12px;
             min-height: 300px;
         }
-        .feed-card .feed-body #deepchat-feed {
-            min-height: 300px;
-        }
+        .feed-card .feed-body #deepchat-feed { min-height: 300px; }
 
-        /* ===== ЧАТ ===== */
         .chat-container {
             display: none;
             margin-top: 12px;
         }
-        .chat-container.show {
-            display: block;
-        }
+        .chat-container.show { display: block; }
         .chat-container .chat-card {
             background: #0f0f18;
             border: 1px solid #1a1a1a;
@@ -317,11 +289,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        .chat-container .chat-card .chat-header .c-title {
-            font-weight: 700;
-            font-size: 0.85rem;
-            color: #fff;
-        }
+        .chat-container .chat-card .chat-header .c-title { font-weight: 700; font-size: 0.85rem; color: #fff; }
         .chat-container .chat-card .chat-header .c-title span { color: #1877f2; }
         .chat-container .chat-card .chat-header .c-back {
             background: none;
@@ -342,11 +310,8 @@
             padding: 0;
             min-height: 400px;
         }
-        .chat-container .chat-card .chat-body #deepchat-widget {
-            min-height: 400px;
-        }
+        .chat-container .chat-card .chat-body #deepchat-widget { min-height: 400px; }
 
-        /* ===== АДМИН-ТОЧКИ ===== */
         .admin-dots {
             position: fixed;
             bottom: 10px;
@@ -364,9 +329,7 @@
             transition: all 0.3s;
             position: relative;
         }
-        .admin-dot:hover {
-            transform: scale(1.3);
-        }
+        .admin-dot:hover { transform: scale(1.3); }
         .admin-dot.feed-dot {
             background: rgba(255, 140, 0, 0.1);
             border-color: rgba(255, 140, 0, 0.2);
@@ -398,11 +361,8 @@
             border: 1px solid #1a1a1a;
             display: none;
         }
-        .admin-dot:hover .dot-label {
-            display: block;
-        }
+        .admin-dot:hover .dot-label { display: block; }
 
-        /* ===== МОДАЛКИ ===== */
         .app-modal {
             display: none;
             position: fixed;
@@ -421,20 +381,20 @@
             background: #1a1a1a;
             padding: 24px;
             border-radius: 20px;
-            max-width: 400px;
+            max-width: 500px;
             width: 100%;
             border: 1px solid #333;
+            max-height: 80vh;
+            overflow-y: auto;
         }
-        .app-modal .modal-box h3 {
-            color: #fff;
-            margin-bottom: 4px;
-        }
+        .app-modal .modal-box h3 { color: #fff; margin-bottom: 4px; }
         .app-modal .modal-box .modal-sub {
             color: #666;
             font-size: 0.85rem;
             margin-bottom: 14px;
         }
-        .app-modal .modal-box input {
+        .app-modal .modal-box input,
+        .app-modal .modal-box textarea {
             width: 100%;
             padding: 10px 14px;
             background: #0f0f0f;
@@ -444,8 +404,14 @@
             font-size: 0.95rem;
             outline: none;
             margin-bottom: 10px;
+            font-family: inherit;
         }
-        .app-modal .modal-box input:focus {
+        .app-modal .modal-box textarea {
+            min-height: 50px;
+            resize: vertical;
+        }
+        .app-modal .modal-box input:focus,
+        .app-modal .modal-box textarea:focus {
             border-color: #1877f2;
         }
         .app-modal .modal-box .modal-btns {
@@ -465,108 +431,99 @@
             background: #2a2a2a;
             color: #aaa;
         }
-        .app-modal .modal-box .modal-btns .btn-cancel:hover {
-            background: #3a3a3a;
-        }
+        .app-modal .modal-box .modal-btns .btn-cancel:hover { background: #3a3a3a; }
         .app-modal .modal-box .modal-btns .btn-save {
             background: #1877f2;
             color: #fff;
         }
-        .app-modal .modal-box .modal-btns .btn-save:hover {
-            background: #4a9eff;
-        }
+        .app-modal .modal-box .modal-btns .btn-save:hover { background: #4a9eff; }
         .app-modal .modal-box .modal-btns .btn-save.orange {
             background: #ff8c00;
         }
-        .app-modal .modal-box .modal-btns .btn-save.orange:hover {
-            background: #ffa033;
+        .app-modal .modal-box .modal-btns .btn-save.orange:hover { background: #ffa033; }
+
+        /* ===== КОММЕНТАРИИ В МОДАЛКЕ ===== */
+        .comment-item {
+            background: #0f0f1a;
+            border: 1px solid #1a1a2a;
+            border-radius: 12px;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+        }
+        .comment-item .comment-author {
+            color: #ffaa44;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+        .comment-item .comment-time {
+            color: #666;
+            font-size: 0.5rem;
+            margin-left: 6px;
+        }
+        .comment-item .comment-text {
+            color: #ddd;
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+        .comment-item .comment-delete {
+            background: #4a1a1a;
+            border: 1px solid #6a1a1a;
+            color: #ff6666;
+            padding: 0 10px;
+            border-radius: 40px;
+            font-size: 0.5rem;
+            cursor: pointer;
+            margin-top: 4px;
+        }
+        .comments-list {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+        .comments-list .no-comments {
+            color: #444;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
         }
 
-        /* ===== АДАПТИВ ===== */
         @media (max-width: 640px) {
             .app-header {
                 padding: 10px 12px;
                 min-height: 48px;
             }
-            .app-header .logo {
-                font-size: 1rem;
-            }
-            .app-header .hamburger {
-                font-size: 1.4rem;
-                padding: 2px 6px;
-            }
-            .app-header .header-user {
-                font-size: 0.55rem;
-                padding: 1px 8px;
-            }
-            .app-sidebar {
-                width: 260px;
-                left: -280px;
-            }
-            .app-content {
-                padding: 0 8px 20px;
-            }
-            .feed-card .feed-header .f-title {
-                font-size: 0.8rem;
-            }
-            .feed-card .feed-body {
-                padding: 8px;
-                min-height: 250px;
-            }
-            .chat-container .chat-card .chat-header .c-title {
-                font-size: 0.8rem;
-            }
-            .chat-container .chat-card .chat-body {
-                min-height: 300px;
-            }
-            .admin-dots {
-                bottom: 6px;
-                right: 6px;
-                gap: 6px;
-            }
-            .admin-dot {
-                width: 12px;
-                height: 12px;
-            }
+            .app-header .logo { font-size: 1rem; }
+            .app-header .hamburger { font-size: 1.4rem; padding: 2px 6px; }
+            .app-header .header-user { font-size: 0.55rem; padding: 1px 8px; }
+            .app-sidebar { width: 260px; left: -280px; }
+            .app-content { padding: 0 8px 20px; }
+            .feed-card .feed-header .f-title { font-size: 0.8rem; }
+            .feed-card .feed-body { padding: 8px; min-height: 250px; }
+            .chat-container .chat-card .chat-header .c-title { font-size: 0.8rem; }
+            .chat-container .chat-card .chat-body { min-height: 300px; }
+            .admin-dots { bottom: 6px; right: 6px; gap: 6px; }
+            .admin-dot { width: 12px; height: 12px; }
+            .app-modal .modal-box { max-width: 95%; padding: 16px; }
         }
-
         @media (max-width: 400px) {
-            .app-header .logo {
-                font-size: 0.85rem;
-            }
-            .app-header .hamburger {
-                font-size: 1.2rem;
-            }
-            .app-sidebar {
-                width: 240px;
-                left: -260px;
-            }
-            .app-sidebar .sidebar-nav .nav-item {
-                padding: 8px 12px;
-                font-size: 0.8rem;
-            }
-            .app-sidebar .sidebar-rooms .room-item {
-                padding: 6px 10px;
-                font-size: 0.8rem;
-            }
+            .app-header .logo { font-size: 0.85rem; }
+            .app-header .hamburger { font-size: 1.2rem; }
+            .app-sidebar { width: 240px; left: -260px; }
+            .app-sidebar .sidebar-nav .nav-item { padding: 8px 12px; font-size: 0.8rem; }
+            .app-sidebar .sidebar-rooms .room-item { padding: 6px 10px; font-size: 0.8rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- ===== ШАПКА ===== -->
     <header class="app-header">
         <button class="hamburger" onclick="toggleSidebar()">☰</button>
-        <div class="logo">
-            Deep<span>Chat</span>
-            <span class="badge">BETA</span>
-        </div>
+        <div class="logo">Deep<span>Chat</span><span class="badge">BETA</span></div>
         <span class="header-admin-badge" id="headerFeedBadge">📰 Админ</span>
         <span class="header-admin-badge" id="headerRoomBadge">💬 Админ</span>
         <span class="header-user" id="headerUser">👤 Гость</span>
     </header>
 
-    <!-- ===== САЙДБАР ===== -->
     <div class="app-sidebar" id="appSidebar">
         <div class="sidebar-header">
             <span class="sidebar-title">💬 DeepChat</span>
@@ -580,68 +537,46 @@
             </div>
         </div>
         <div class="sidebar-nav">
-            <div class="nav-item active" onclick="switchToFeed()" id="navFeed">
-                <span class="nav-icon">📰</span> Лента новостей
-            </div>
-            <div class="nav-item" onclick="switchToRooms()" id="navRooms">
-                <span class="nav-icon">💬</span> Комнаты
-            </div>
+            <div class="nav-item active" onclick="switchToFeed()" id="navFeed"><span class="nav-icon">📰</span> Лента новостей</div>
+            <div class="nav-item" onclick="switchToRooms()" id="navRooms"><span class="nav-icon">💬</span> Комнаты</div>
         </div>
         <div class="sidebar-rooms" id="sidebarRooms">
             <div class="rooms-title">📋 Комнаты</div>
-            <div id="roomList">
-                <div class="room-empty">Нет комнат</div>
-            </div>
+            <div id="roomList"><div class="room-empty">Нет комнат</div></div>
         </div>
         <div class="sidebar-footer">
             <button class="create-room-btn" id="createRoomBtn" onclick="openCreateRoom()">➕ Создать комнату</button>
         </div>
     </div>
 
-    <!-- ===== ОВЕРЛЕЙ ===== -->
     <div class="app-overlay" id="appOverlay" onclick="toggleSidebar()"></div>
 
-    <!-- ===== ОСНОВНОЙ КОНТЕНТ ===== -->
     <div class="app-content" id="appContent">
-
-        <!-- ===== ЛЕНТА ===== -->
         <div id="feedContainer">
             <div class="feed-card">
                 <div class="feed-header">
                     <div class="f-title">📰 <span>DeepFeed</span> · Новости</div>
                     <div class="f-status">● онлайн</div>
                 </div>
-                <div class="feed-body">
-                    <div id="deepchat-feed"></div>
-                </div>
+                <div class="feed-body"><div id="deepchat-feed"></div></div>
             </div>
         </div>
-
-        <!-- ===== ЧАТ ===== -->
         <div class="chat-container" id="chatContainer">
             <div class="chat-card">
                 <div class="chat-header">
                     <div class="c-title">💬 <span id="chatRoomName">DeepChat</span></div>
                     <button class="c-back" onclick="switchToFeed()">← Назад</button>
                 </div>
-                <div class="chat-body">
-                    <div id="deepchat-widget"></div>
-                </div>
+                <div class="chat-body"><div id="deepchat-widget"></div></div>
             </div>
         </div>
     </div>
 
-    <!-- ===== АДМИН-ТОЧКИ ===== -->
     <div class="admin-dots">
-        <div class="admin-dot feed-dot" id="feedAdminDot" onclick="openFeedAdmin()">
-            <span class="dot-label">Лента</span>
-        </div>
-        <div class="admin-dot room-dot" id="roomAdminDot" onclick="openRoomAdmin()">
-            <span class="dot-label">Комнаты</span>
-        </div>
+        <div class="admin-dot feed-dot" id="feedAdminDot" onclick="openFeedAdmin()"><span class="dot-label">Лента</span></div>
+        <div class="admin-dot room-dot" id="roomAdminDot" onclick="openRoomAdmin()"><span class="dot-label">Комнаты</span></div>
     </div>
 
-    <!-- ===== МОДАЛКА АДМИН ЛЕНТЫ ===== -->
     <div class="app-modal" id="feedAdminModal">
         <div class="modal-box">
             <h3>📰 Админ-вход (Лента)</h3>
@@ -654,7 +589,6 @@
         </div>
     </div>
 
-    <!-- ===== МОДАЛКА АДМИН КОМНАТ ===== -->
     <div class="app-modal" id="roomAdminModal">
         <div class="modal-box">
             <h3>💬 Админ-вход (Комнаты)</h3>
@@ -667,7 +601,6 @@
         </div>
     </div>
 
-    <!-- ===== МОДАЛКА СОЗДАНИЯ КОМНАТЫ ===== -->
     <div class="app-modal" id="createRoomModal">
         <div class="modal-box">
             <h3>📝 Новая комната</h3>
@@ -680,18 +613,27 @@
         </div>
     </div>
 
-    <!-- ============================================================ -->
-    <!-- ======  ПОДКЛЮЧАЕМ FIREBASE  ====== -->
-    <!-- ============================================================ -->
+    <!-- ===== МОДАЛКА КОММЕНТАРИЕВ ===== -->
+    <div class="app-modal" id="commentsModal">
+        <div class="modal-box">
+            <h3>💬 Комментарии</h3>
+            <div class="modal-sub" id="commentsPostTitle">К посту</div>
+            <div class="comments-list" id="commentsList">
+                <div class="no-comments">Нет комментариев</div>
+            </div>
+            <textarea id="commentInput" placeholder="Напишите комментарий..."></textarea>
+            <div class="modal-btns">
+                <button class="btn-cancel" onclick="closeModal('commentsModal')">Закрыть</button>
+                <button class="btn-save orange" onclick="sendComment()">💬 Отправить</button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
 
-    <!-- ============================================================ -->
-    <!-- ======  ОСНОВНОЙ СКРИПТ  ====== -->
-    <!-- ============================================================ -->
     <script>
     (function() {
-        // ===== FIREBASE =====
         const config = {
             apiKey: "AIzaSyC81Ow4VPAUcaQGAuJjhtA-OaR8hyqxCtI",
             authDomain: "mychatapp-2c141.firebaseapp.com",
@@ -704,15 +646,13 @@
         firebase.initializeApp(config);
         const DB = firebase.database();
 
-        // ===== ID САЙТА =====
         const SITE_ID = window.location.hostname.replace(/\./g, '_') || 'default_site';
 
-        // ===== ПОЛЬЗОВАТЕЛЬ =====
         let USER = localStorage.getItem('dc_user_' + SITE_ID) || '';
         let IS_FEED_ADMIN = localStorage.getItem('dc_feed_admin_' + SITE_ID) === 'true';
         let IS_ROOM_ADMIN = localStorage.getItem('dc_room_admin_' + SITE_ID) === 'true';
         let CURRENT_ROOM = localStorage.getItem('dc_room_' + SITE_ID) || '';
-        let CURRENT_VIEW = 'feed'; // 'feed' или 'chat'
+        let CURRENT_VIEW = 'feed';
 
         if (!USER) {
             const nick = prompt('👤 Ваше имя:');
@@ -723,7 +663,6 @@
             }
         }
 
-        // ===== ОБНОВЛЕНИЕ ПОЛЬЗОВАТЕЛЯ В ШАПКЕ =====
         document.getElementById('headerUser').textContent = '👤 ' + (USER || 'Гость');
         document.getElementById('sidebarUserName').textContent = USER || 'Гость';
 
@@ -737,10 +676,7 @@
             document.getElementById('createRoomBtn').classList.add('show');
         }
 
-        // ================================================================
-        // ======  УПРАВЛЕНИЕ ВИДАМИ  ======
-        // ================================================================
-
+        // ===== УПРАВЛЕНИЕ ВИДАМИ =====
         window.switchToFeed = function() {
             CURRENT_VIEW = 'feed';
             CURRENT_ROOM = '';
@@ -750,7 +686,6 @@
             document.getElementById('navFeed').classList.add('active');
             document.getElementById('navRooms').classList.remove('active');
             toggleSidebar();
-            // Обновляем ленту
             if (typeof dfLoadPosts === 'function') dfLoadPosts();
         };
 
@@ -759,10 +694,8 @@
             document.getElementById('navFeed').classList.remove('active');
             toggleSidebar();
             if (CURRENT_ROOM) {
-                // Если есть активная комната, показываем её
                 openChat(CURRENT_ROOM);
             } else {
-                // Иначе показываем ленту с подсказкой выбрать комнату
                 switchToFeed();
                 alert('💬 Выберите комнату из меню');
             }
@@ -774,44 +707,32 @@
             localStorage.setItem('dc_room_' + SITE_ID, roomId);
             document.getElementById('feedContainer').style.display = 'none';
             document.getElementById('chatContainer').classList.add('show');
-            // Загружаем чат
             if (typeof dcLoadDeepChat === 'function') {
                 dcLoadDeepChat(roomId);
             }
-            // Обновляем название комнаты
             DB.ref('sites/' + SITE_ID + '/rooms/' + roomId + '/name').once('value', snap => {
                 const name = snap.val() || 'Комната';
                 document.getElementById('chatRoomName').textContent = name;
             });
-            // Обновляем активную комнату в меню
             document.querySelectorAll('.room-item').forEach(el => {
                 el.classList.toggle('active', el.dataset.room === roomId);
             });
         }
 
-        // ================================================================
-        // ======  САЙДБАР  ======
-        // ================================================================
-
         window.toggleSidebar = function() {
-            const sidebar = document.getElementById('appSidebar');
-            const overlay = document.getElementById('appOverlay');
-            sidebar.classList.toggle('open');
-            overlay.classList.toggle('show');
+            document.getElementById('appSidebar').classList.toggle('open');
+            document.getElementById('appOverlay').classList.toggle('show');
         };
 
-        // ===== ЗАГРУЗКА КОМНАТ В МЕНЮ =====
         function loadRoomsInSidebar() {
             DB.ref('sites/' + SITE_ID + '/rooms').orderByChild('createdAt').on('value', snap => {
                 const data = snap.val() || {};
                 const keys = Object.keys(data).sort((a, b) => (data[a].createdAt || 0) - (data[b].createdAt || 0));
                 const list = document.getElementById('roomList');
-
                 if (keys.length === 0) {
                     list.innerHTML = '<div class="room-empty">Нет комнат</div>';
                     return;
                 }
-
                 let html = '';
                 keys.forEach(key => {
                     const room = data[key];
@@ -832,10 +753,6 @@
             openChat(roomId);
             toggleSidebar();
         };
-
-        // ================================================================
-        // ======  СОЗДАНИЕ КОМНАТЫ  ======
-        // ================================================================
 
         window.openCreateRoom = function() {
             if (!IS_ROOM_ADMIN) {
@@ -860,10 +777,6 @@
                 alert('✅ Комната "' + name + '" создана!');
             }).catch(e => alert('❌ ' + e.message));
         };
-
-        // ================================================================
-        // ======  АДМИНКИ  ======
-        // ================================================================
 
         window.openFeedAdmin = function() {
             document.getElementById('feedAdminModal').classList.add('open');
@@ -897,7 +810,7 @@
 
         window.checkRoomAdmin = function() {
             const pass = document.getElementById('roomAdminPass').value.trim();
-            if (pass === '67890') {
+            if (pass === '12345') {
                 IS_ROOM_ADMIN = true;
                 localStorage.setItem('dc_room_admin_' + SITE_ID, 'true');
                 document.getElementById('roomAdminDot').classList.add('active');
@@ -918,69 +831,144 @@
         };
 
         // ================================================================
-        // ======  ЗАГРУЗКА ВИДЖЕТОВ  ======
+        // ======  КОММЕНТАРИИ  ======
         // ================================================================
 
-        // Загружаем ленту с примерами постов
+        let currentCommentTarget = null; // { type: 'feed' или 'chat', id: '...' }
+
+        window.openComments = function(type, postId, title) {
+            currentCommentTarget = { type: type, id: postId };
+            document.getElementById('commentsPostTitle').textContent = 'К посту: ' + title;
+            document.getElementById('commentInput').value = '';
+            document.getElementById('commentsModal').classList.add('open');
+            loadComments(type, postId);
+        };
+
+        function loadComments(type, postId) {
+            const path = type === 'feed' 
+                ? 'sites/' + SITE_ID + '/feed_posts/' + postId + '/comments'
+                : 'sites/' + SITE_ID + '/rooms/' + CURRENT_ROOM + '/messages/' + postId + '/comments';
+            
+            const list = document.getElementById('commentsList');
+            list.innerHTML = '<div style="color:#444;text-align:center;padding:10px;">⏳ Загрузка...</div>';
+
+            DB.ref(path).orderByChild('timestamp').on('value', snap => {
+                const data = snap.val() || {};
+                const keys = Object.keys(data);
+                if (keys.length === 0) {
+                    list.innerHTML = '<div class="no-comments">Нет комментариев</div>';
+                    return;
+                }
+                let html = '';
+                keys.forEach(key => {
+                    const c = data[key];
+                    const isAuthor = c.nick === USER;
+                    html += `
+                        <div class="comment-item">
+                            <div>
+                                <span class="comment-author">${escapeHtml(c.nick || 'Аноним')}</span>
+                                <span class="comment-time">${c.time || ''}</span>
+                            </div>
+                            <div class="comment-text">${escapeHtml(c.text || '')}</div>
+                            ${isAuthor ? `<button class="comment-delete" onclick="deleteComment('${type}','${postId}','${key}')">🗑</button>` : ''}
+                        </div>
+                    `;
+                });
+                list.innerHTML = html;
+                list.scrollTop = list.scrollHeight;
+            });
+        }
+
+        window.sendComment = function() {
+            const text = document.getElementById('commentInput').value.trim();
+            if (!text) { alert('⚠️ Напишите комментарий'); return; }
+            if (!currentCommentTarget) { alert('⚠️ Ошибка'); return; }
+
+            const { type, id } = currentCommentTarget;
+            const path = type === 'feed'
+                ? 'sites/' + SITE_ID + '/feed_posts/' + id + '/comments'
+                : 'sites/' + SITE_ID + '/rooms/' + CURRENT_ROOM + '/messages/' + id + '/comments';
+
+            const data = {
+                nick: USER || 'Аноним',
+                text: text,
+                time: new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}),
+                timestamp: Date.now()
+            };
+
+            DB.ref(path).push(data).then(() => {
+                document.getElementById('commentInput').value = '';
+                // Обновляем счётчик комментариев
+                updateCommentCount(type, id);
+            }).catch(e => alert('❌ ' + e.message));
+        };
+
+        window.deleteComment = function(type, postId, commentId) {
+            if (!confirm('Удалить комментарий?')) return;
+            const path = type === 'feed'
+                ? 'sites/' + SITE_ID + '/feed_posts/' + postId + '/comments/' + commentId
+                : 'sites/' + SITE_ID + '/rooms/' + CURRENT_ROOM + '/messages/' + postId + '/comments/' + commentId;
+            DB.ref(path).remove().then(() => {
+                updateCommentCount(type, postId);
+            });
+        };
+
+        function updateCommentCount(type, postId) {
+            const path = type === 'feed'
+                ? 'sites/' + SITE_ID + '/feed_posts/' + postId + '/comments'
+                : 'sites/' + SITE_ID + '/rooms/' + CURRENT_ROOM + '/messages/' + postId + '/comments';
+            DB.ref(path).once('value', snap => {
+                const count = snap.exists() ? Object.keys(snap.val()).length : 0;
+                // Обновляем счётчик в DOM
+                const selector = type === 'feed' ? '.df-post[data-id="' + postId + '"] .df-comment-count' : '.dc-msg[data-id="' + postId + '"] .dc-comment-count';
+                document.querySelectorAll(selector).forEach(el => {
+                    el.textContent = count;
+                });
+            });
+        }
+
+        // ================================================================
+        // ======  ЗАГРУЗКА ЛЕНТЫ  ======
+        // ================================================================
+
         function loadFeedWidget() {
             const root = document.getElementById('deepchat-feed');
-            if (!root) return;
-            if (root.dataset.loaded === 'true') return;
+            if (!root || root.dataset.loaded === 'true') return;
             root.dataset.loaded = 'true';
 
-            // Сначала добавим примеры постов, если их нет
+            // Примеры постов
             const feedRef = DB.ref('sites/' + SITE_ID + '/feed_posts');
             feedRef.once('value', snap => {
                 if (!snap.exists()) {
-                    // Добавляем примеры постов
                     const examples = [
                         {
                             author: '📢 Администрация',
-                            text: 'Добро пожаловать в наше ЛГБТ-сообщество! Здесь вы можете общаться, делиться новостями и находить друзей. 🏳️‍🌈',
+                            text: 'Добро пожаловать в наше сообщество! Здесь вы можете общаться, делиться новостями и находить друзей. 🏳️‍🌈',
                             time: '12:00',
                             timestamp: Date.now() - 3600000,
                             marquee: '🌟 Добро пожаловать в DeepChat! Будьте собой! 🌟',
                             link: null,
                             buttons: [{ label: '📋 Правила', url: '#' }],
-                            hashtags: ['#LGBT', '#ДоброПожаловать', '#Сообщество'],
-                            seoDescription: 'Добро пожаловать в ЛГБТ-сообщество DeepChat',
+                            hashtags: ['#ДоброПожаловать', '#Сообщество'],
+                            seoDescription: 'Добро пожаловать в сообщество DeepChat',
                             edited: false,
                             img: null
                         },
                         {
                             author: '🏳️‍🌈 Организатор',
-                            text: 'Завтра в 19:00 онлайн-встреча! Обсудим планы на месяц. Все желающие приглашаются!',
+                            text: 'Завтра в 19:00 онлайн-встреча! Обсудим планы на месяц.',
                             time: '11:30',
                             timestamp: Date.now() - 7200000,
                             marquee: '📅 Онлайн-встреча завтра в 19:00!',
                             link: 'https://meet.google.com/',
-                            buttons: [
-                                { label: '🔗 Подключиться', url: 'https://meet.google.com/' },
-                                { label: '📝 Записаться', url: '#' }
-                            ],
-                            hashtags: ['#Встреча', '#LGBT', '#Планы'],
+                            buttons: [{ label: '🔗 Подключиться', url: 'https://meet.google.com/' }],
+                            hashtags: ['#Встреча', '#Планы'],
                             seoDescription: 'Онлайн-встреча сообщества завтра в 19:00',
-                            edited: false,
-                            img: null
-                        },
-                        {
-                            author: '🌈 Активный участник',
-                            text: 'Кто хочет организовать пикник в эти выходные? Погода обещает быть отличной! ☀️',
-                            time: '10:15',
-                            timestamp: Date.now() - 10800000,
-                            marquee: '🧺 Пикник в выходные! Присоединяйтесь!',
-                            link: null,
-                            buttons: [{ label: '✅ Пойду', url: '#' }],
-                            hashtags: ['#Пикник', '#LGBT', '#Выходные', '#Друзья'],
-                            seoDescription: 'Организация пикника для ЛГБТ-сообщества',
                             edited: false,
                             img: null
                         }
                     ];
-
-                    examples.forEach(post => {
-                        feedRef.push(post);
-                    });
+                    examples.forEach(post => feedRef.push(post));
                 }
             });
 
@@ -988,8 +976,7 @@
             script.src = 'data:text/javascript;charset=utf-8,' + encodeURIComponent(`
                 (function() {
                     const root = document.getElementById('deepchat-feed');
-                    if (!root) return;
-                    if (root.dataset.loaded === 'true') return;
+                    if (!root || root.dataset.loaded === 'true') return;
                     root.dataset.loaded = 'true';
 
                     const DB = firebase.database();
@@ -997,7 +984,6 @@
                     const USER = '${USER}';
                     const IS_ADMIN = ${IS_FEED_ADMIN};
 
-                    // ===== СТИЛИ ДЛЯ ЛЕНТЫ =====
                     const style = document.createElement('style');
                     style.textContent = \`
                         #deepchat-feed * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1027,9 +1013,7 @@
                             from { opacity: 0; transform: translateY(10px); }
                             to { opacity: 1; transform: translateY(0); }
                         }
-                        #deepchat-feed .df-post:hover {
-                            border-color: #2a2a3a;
-                        }
+                        #deepchat-feed .df-post:hover { border-color: #2a2a3a; }
                         #deepchat-feed .df-post .df-marquee {
                             background: #0f0f1a;
                             padding: 4px 0;
@@ -1119,11 +1103,8 @@
                             font-weight: 700;
                             font-size: 0.85rem;
                             cursor: pointer;
-                            transition: background 0.2s;
                         }
-                        #deepchat-feed .df-post .df-buttons .df-btn:hover {
-                            background: #ffa033;
-                        }
+                        #deepchat-feed .df-post .df-buttons .df-btn:hover { background: #ffa033; }
                         #deepchat-feed .df-post .df-hashtags {
                             display: flex;
                             flex-wrap: wrap;
@@ -1150,9 +1131,7 @@
                             border-radius: 6px;
                             border: 1px solid #0a0a12;
                         }
-                        #deepchat-feed .df-post .df-seo.show {
-                            display: block;
-                        }
+                        #deepchat-feed .df-post .df-seo.show { display: block; }
                         #deepchat-feed .df-post .df-actions {
                             display: flex;
                             gap: 6px;
@@ -1167,11 +1146,8 @@
                             border-radius: 40px;
                             font-size: 0.6rem;
                             cursor: pointer;
-                            transition: background 0.2s;
                         }
-                        #deepchat-feed .df-post .df-actions button:hover {
-                            background: #2a2a3a;
-                        }
+                        #deepchat-feed .df-post .df-actions button:hover { background: #2a2a3a; }
                         #deepchat-feed .df-post .df-actions .df-edit-btn {
                             background: #2a2a3a;
                             border-color: #ff8c00;
@@ -1182,23 +1158,29 @@
                             border-color: #6a1a1a;
                             color: #ff6666;
                         }
+                        #deepchat-feed .df-post .df-comment-btn {
+                            background: #1a1a2a;
+                            border: 1px solid #2a2a3a;
+                            color: #66aaff;
+                            padding: 0 12px;
+                            border-radius: 40px;
+                            font-size: 0.6rem;
+                            cursor: pointer;
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 4px;
+                        }
+                        #deepchat-feed .df-post .df-comment-btn:hover {
+                            background: #2a2a3a;
+                        }
                         #deepchat-feed .df-empty {
                             text-align: center;
                             padding: 60px 20px;
                             color: #444;
                         }
-                        #deepchat-feed .df-empty .df-empty-icon {
-                            font-size: 3rem;
-                            margin-bottom: 12px;
-                        }
-                        #deepchat-feed .df-empty .df-empty-title {
-                            font-size: 1.2rem;
-                            color: #666;
-                        }
-                        #deepchat-feed .df-empty .df-empty-sub {
-                            font-size: 0.85rem;
-                            color: #444;
-                        }
+                        #deepchat-feed .df-empty .df-empty-icon { font-size: 3rem; margin-bottom: 12px; }
+                        #deepchat-feed .df-empty .df-empty-title { font-size: 1.2rem; color: #666; }
+                        #deepchat-feed .df-empty .df-empty-sub { font-size: 0.85rem; color: #444; }
                         #deepchat-feed .df-create-form {
                             display: none;
                             background: #0f0f1a;
@@ -1207,9 +1189,7 @@
                             padding: 16px;
                             margin-bottom: 16px;
                         }
-                        #deepchat-feed .df-create-form.show {
-                            display: block;
-                        }
+                        #deepchat-feed .df-create-form.show { display: block; }
                         #deepchat-feed .df-create-form .df-form-title {
                             color: #ff8c00;
                             font-weight: 700;
@@ -1230,23 +1210,15 @@
                             font-family: inherit;
                         }
                         #deepchat-feed .df-create-form input:focus,
-                        #deepchat-feed .df-create-form textarea:focus {
-                            border-color: #ff8c00;
-                        }
-                        #deepchat-feed .df-create-form textarea {
-                            min-height: 60px;
-                            resize: vertical;
-                        }
+                        #deepchat-feed .df-create-form textarea:focus { border-color: #ff8c00; }
+                        #deepchat-feed .df-create-form textarea { min-height: 60px; resize: vertical; }
                         #deepchat-feed .df-create-form .df-btn-group {
                             display: flex;
                             gap: 6px;
                             margin-bottom: 6px;
                             align-items: center;
                         }
-                        #deepchat-feed .df-create-form .df-btn-group input {
-                            flex: 1;
-                            margin-bottom: 0;
-                        }
+                        #deepchat-feed .df-create-form .df-btn-group input { flex: 1; margin-bottom: 0; }
                         #deepchat-feed .df-create-form .df-btn-group .df-remove-btn {
                             background: #4a1a1a;
                             color: #ff6666;
@@ -1266,9 +1238,7 @@
                             font-size: 0.8rem;
                             margin-bottom: 6px;
                         }
-                        #deepchat-feed .df-create-form .df-add-btn:hover {
-                            background: #2a2a3a;
-                        }
+                        #deepchat-feed .df-create-form .df-add-btn:hover { background: #2a2a3a; }
                         #deepchat-feed .df-create-form .df-form-actions {
                             display: flex;
                             gap: 8px;
@@ -1286,19 +1256,13 @@
                             background: #ff8c00;
                             color: #0b0b0f;
                         }
-                        #deepchat-feed .df-create-form .df-form-actions .df-submit-btn:hover {
-                            background: #ffa033;
-                        }
+                        #deepchat-feed .df-create-form .df-form-actions .df-submit-btn:hover { background: #ffa033; }
                         #deepchat-feed .df-create-form .df-form-actions .df-cancel-btn {
                             background: #2a2a2a;
                             color: #aaa;
                         }
-                        #deepchat-feed .df-create-form .df-form-actions .df-cancel-btn:hover {
-                            background: #3a3a3a;
-                        }
-                        #deepchat-feed .df-post .df-file-preview {
-                            margin: 6px 0;
-                        }
+                        #deepchat-feed .df-create-form .df-form-actions .df-cancel-btn:hover { background: #3a3a3a; }
+                        #deepchat-feed .df-post .df-file-preview { margin: 6px 0; }
                         #deepchat-feed .df-post .df-file-preview img {
                             max-width: 100%;
                             max-height: 200px;
@@ -1308,38 +1272,29 @@
                         #deepchat-feed ::-webkit-scrollbar { width: 4px; }
                         #deepchat-feed ::-webkit-scrollbar-track { background: transparent; }
                         #deepchat-feed ::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 4px; }
+                        #deepchat-feed .df-post-footer {
+                            display: flex;
+                            gap: 12px;
+                            margin-top: 8px;
+                            padding-top: 8px;
+                            border-top: 1px solid #1a1a2a;
+                            flex-wrap: wrap;
+                        }
                         @media (max-width: 640px) {
-                            #deepchat-feed .df-post .df-frame iframe {
-                                height: 200px;
-                            }
-                            #deepchat-feed .df-post {
-                                padding: 12px;
-                            }
-                            #deepchat-feed .df-post .df-text {
-                                font-size: 0.85rem;
-                            }
-                            #deepchat-feed .df-post .df-img {
-                                max-height: 200px;
-                            }
+                            #deepchat-feed .df-post .df-frame iframe { height: 200px; }
+                            #deepchat-feed .df-post { padding: 12px; }
+                            #deepchat-feed .df-post .df-text { font-size: 0.85rem; }
+                            #deepchat-feed .df-post .df-img { max-height: 200px; }
                         }
                         @media (max-width: 400px) {
-                            #deepchat-feed .df-post .df-frame iframe {
-                                height: 160px;
-                            }
-                            #deepchat-feed .df-post .df-img {
-                                max-height: 160px;
-                            }
-                            #deepchat-feed .df-create-form .df-btn-group {
-                                flex-wrap: wrap;
-                            }
-                            #deepchat-feed .df-create-form .df-btn-group input {
-                                min-width: 60px;
-                            }
+                            #deepchat-feed .df-post .df-frame iframe { height: 160px; }
+                            #deepchat-feed .df-post .df-img { max-height: 160px; }
+                            #deepchat-feed .df-create-form .df-btn-group { flex-wrap: wrap; }
+                            #deepchat-feed .df-create-form .df-btn-group input { min-width: 60px; }
                         }
                     \`;
                     root.appendChild(style);
 
-                    // ===== КОНТЕЙНЕРЫ =====
                     const postsContainer = document.createElement('div');
                     postsContainer.className = 'df-posts';
                     postsContainer.id = 'dfPosts';
@@ -1349,11 +1304,11 @@
                     formContainer.className = 'df-create-form';
                     formContainer.id = 'dfCreateForm';
                     formContainer.innerHTML = \`
-                        <div class="df-form-title">✏️ Новый пост / Объявление</div>
-                        <input type="text" id="dfMarqueeInput" placeholder="📢 Бегущая строка (опционально)">
+                        <div class="df-form-title">✏️ Новый пост</div>
+                        <input type="text" id="dfMarqueeInput" placeholder="📢 Бегущая строка">
                         <textarea id="dfTextInput" placeholder="📝 Текст поста..."></textarea>
-                        <input type="url" id="dfLinkInput" placeholder="🔗 Ссылка (iframe, опционально)">
-                        <input type="text" id="dfHashtagsInput" placeholder="#хештеги через пробел (до 5)">
+                        <input type="url" id="dfLinkInput" placeholder="🔗 Ссылка (iframe)">
+                        <input type="text" id="dfHashtagsInput" placeholder="#хештеги через пробел">
                         <div style="color:#666;font-size:0.7rem;margin:4px 0;">🔘 Кнопки</div>
                         <div id="dfButtonsContainer"></div>
                         <button class="df-add-btn" onclick="dfAddButtonField()">➕ Добавить кнопку</button>
@@ -1366,16 +1321,13 @@
 
                     let editingPostId = null;
 
-                    // ===== ЗАГРУЗКА ПОСТОВ =====
                     function dfLoadPosts() {
                         const postsRef = DB.ref('sites/' + SITE_ID + '/feed_posts');
                         postsRef.orderByChild('timestamp').on('value', snap => {
                             const container = document.getElementById('dfPosts');
                             container.innerHTML = '';
-
                             const data = snap.val() || {};
                             const keys = Object.keys(data).sort((a, b) => (data[b].timestamp || 0) - (data[a].timestamp || 0));
-
                             if (keys.length === 0) {
                                 container.innerHTML = \`
                                     <div class="df-empty">
@@ -1386,7 +1338,6 @@
                                 \`;
                                 return;
                             }
-
                             keys.forEach(key => {
                                 const post = data[key];
                                 post.id = key;
@@ -1398,47 +1349,26 @@
                     function dfRenderPost(container, post) {
                         const div = document.createElement('div');
                         div.className = 'df-post';
+                        div.dataset.id = post.id;
 
-                        let marqueeHtml = '';
-                        if (post.marquee) {
-                            marqueeHtml = \`<div class="df-marquee"><span>\${escapeHtml(post.marquee)}</span></div>\`;
-                        }
-
-                        let imgHtml = '';
-                        if (post.img) {
-                            imgHtml = \`<img class="df-img" src="\${post.img}" onclick="window.open(this.src)">\`;
-                        }
-
-                        let frameHtml = '';
-                        if (post.link) {
-                            frameHtml = \`<div class="df-frame"><iframe src="\${post.link}" sandbox="allow-scripts allow-same-origin allow-popups"></iframe></div>\`;
-                        }
-
+                        let marqueeHtml = post.marquee ? \`<div class="df-marquee"><span>\${escapeHtml(post.marquee)}</span></div>\` : '';
+                        let imgHtml = post.img ? \`<img class="df-img" src="\${post.img}" onclick="window.open(this.src)">\` : '';
+                        let frameHtml = post.link ? \`<div class="df-frame"><iframe src="\${post.link}" sandbox="allow-scripts allow-same-origin allow-popups"></iframe></div>\` : '';
                         let buttonsHtml = '';
                         if (post.buttons && post.buttons.length > 0) {
                             buttonsHtml = '<div class="df-buttons">';
                             post.buttons.forEach(btn => {
-                                if (btn.url) {
-                                    buttonsHtml += \`<a href="\${escapeHtml(btn.url)}" target="_blank" class="df-btn">\${escapeHtml(btn.label || '🔗 Перейти')}</a>\`;
-                                }
+                                if (btn.url) buttonsHtml += \`<a href="\${escapeHtml(btn.url)}" target="_blank" class="df-btn">\${escapeHtml(btn.label || '🔗 Перейти')}</a>\`;
                             });
                             buttonsHtml += '</div>';
                         }
-
                         let hashtagsHtml = '';
                         if (post.hashtags && post.hashtags.length > 0) {
                             hashtagsHtml = '<div class="df-hashtags">';
-                            post.hashtags.forEach(tag => {
-                                hashtagsHtml += \`<span class="df-tag">\${escapeHtml(tag)}</span>\`;
-                            });
+                            post.hashtags.forEach(tag => hashtagsHtml += \`<span class="df-tag">\${escapeHtml(tag)}</span>\`);
                             hashtagsHtml += '</div>';
                         }
-
-                        let seoHtml = '';
-                        if (post.seoDescription) {
-                            seoHtml = \`<div class="df-seo show">🔍 SEO: \${escapeHtml(post.seoDescription)}</div>\`;
-                        }
-
+                        let seoHtml = post.seoDescription ? \`<div class="df-seo show">🔍 SEO: \${escapeHtml(post.seoDescription)}</div>\` : '';
                         let actionsHtml = '';
                         if (IS_ADMIN || post.author === USER) {
                             actionsHtml = \`
@@ -1448,6 +1378,17 @@
                                 </div>
                             \`;
                         }
+
+                        // Счётчик комментариев
+                        let commentCount = 0;
+                        const commentsRef = DB.ref('sites/' + SITE_ID + '/feed_posts/' + post.id + '/comments');
+                        commentsRef.once('value', snap => {
+                            if (snap.exists()) {
+                                const count = Object.keys(snap.val()).length;
+                                const el = div.querySelector('.df-comment-count');
+                                if (el) el.textContent = count;
+                            }
+                        });
 
                         div.innerHTML = \`
                             \${marqueeHtml}
@@ -1463,8 +1404,12 @@
                             \${hashtagsHtml}
                             \${seoHtml}
                             \${actionsHtml}
+                            <div class="df-post-footer">
+                                <button class="df-comment-btn" onclick="openComments('feed','\${post.id}','\${escapeHtml(post.text || 'Пост').slice(0,30)}')">
+                                    💬 <span class="df-comment-count">0</span>
+                                </button>
+                            </div>
                         \`;
-
                         container.appendChild(div);
                     }
 
@@ -1474,23 +1419,17 @@
                         const link = document.getElementById('dfLinkInput').value.trim();
                         const hashtagsRaw = document.getElementById('dfHashtagsInput').value.trim();
                         const hashtags = hashtagsRaw ? hashtagsRaw.split(/\\s+/).filter(t => t.startsWith('#')).slice(0, 5) : [];
-
-                        if (!text && !link) {
-                            alert('⚠️ Введите текст или ссылку');
-                            return;
-                        }
-
+                        if (!text && !link) { alert('⚠️ Введите текст или ссылку'); return; }
                         const buttons = [];
                         document.querySelectorAll('#dfButtonsContainer .df-btn-group').forEach(g => {
                             const label = g.querySelector('.df-btn-label').value.trim();
                             const url = g.querySelector('.df-btn-url').value.trim();
                             if (url) buttons.push({ label: label || '🔗 Перейти', url });
                         });
-
                         const postData = {
                             author: USER || 'Аноним',
                             text: text || '📝',
-                            time: new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}),
+                            time: new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}),
                             timestamp: Date.now(),
                             marquee: marquee || null,
                             link: link || null,
@@ -1500,23 +1439,14 @@
                             edited: false,
                             img: null
                         };
-
                         const postsRef = DB.ref('sites/' + SITE_ID + '/feed_posts');
                         if (editingPostId) {
-                            postsRef.child(editingPostId).update({
-                                ...postData,
-                                edited: true,
-                                editedAt: Date.now()
-                            }).then(() => {
-                                dfCancelPost();
-                                alert('✅ Пост обновлён!');
-                                editingPostId = null;
-                            }).catch(e => alert('❌ ' + e.message));
+                            postsRef.child(editingPostId).update({...postData, edited: true, editedAt: Date.now()})
+                                .then(() => { dfCancelPost(); alert('✅ Пост обновлён!'); editingPostId = null; })
+                                .catch(e => alert('❌ ' + e.message));
                         } else {
-                            postsRef.push(postData).then(() => {
-                                dfCancelPost();
-                                alert('✅ Пост опубликован!');
-                            }).catch(e => alert('❌ ' + e.message));
+                            postsRef.push(postData).then(() => { dfCancelPost(); alert('✅ Пост опубликован!'); })
+                                .catch(e => alert('❌ ' + e.message));
                         }
                     };
 
@@ -1526,29 +1456,24 @@
                         postsRef.child(id).once('value', snap => {
                             const post = snap.val();
                             if (!post) return;
-
                             document.getElementById('dfMarqueeInput').value = post.marquee || '';
                             document.getElementById('dfTextInput').value = post.text || '';
                             document.getElementById('dfLinkInput').value = post.link || '';
                             document.getElementById('dfHashtagsInput').value = (post.hashtags || []).join(' ');
-
                             const container = document.getElementById('dfButtonsContainer');
                             container.innerHTML = '';
                             const btns = post.buttons || [];
                             btns.forEach(btn => dfAddButtonField(btn.label, btn.url));
                             if (btns.length === 0) dfAddButtonField('', '');
-
                             document.getElementById('dfCreateForm').classList.add('show');
-                            document.getElementById('dfCreateForm').scrollIntoView({behavior: 'smooth'});
+                            document.getElementById('dfCreateForm').scrollIntoView({behavior:'smooth'});
                             document.querySelector('.df-submit-btn').textContent = '💾 Обновить';
                         });
                     };
 
                     window.dfDeletePost = function(id) {
                         if (!confirm('🗑 Удалить этот пост?')) return;
-                        DB.ref('sites/' + SITE_ID + '/feed_posts/' + id).remove()
-                            .then(() => alert('✅ Удалено'))
-                            .catch(e => alert('❌ ' + e.message));
+                        DB.ref('sites/' + SITE_ID + '/feed_posts/' + id).remove().then(() => alert('✅ Удалено')).catch(e => alert('❌ ' + e.message));
                     };
 
                     window.dfCancelPost = function() {
@@ -1585,9 +1510,7 @@
                     };
 
                     window.dfShowCreateForm = function() {
-                        if (IS_ADMIN) {
-                            document.getElementById('dfCreateForm').classList.add('show');
-                        }
+                        if (IS_ADMIN) document.getElementById('dfCreateForm').classList.add('show');
                     };
 
                     function escapeHtml(str) {
@@ -1595,12 +1518,9 @@
                         return str.replace(/[&<>]/g, m => m === '&' ? '&amp;' : m === '<' ? '&lt;' : '&gt;');
                     }
 
-                    // ===== ЗАПУСК =====
-                    if (IS_ADMIN) {
-                        document.getElementById('dfCreateForm').classList.add('show');
-                    }
+                    if (IS_ADMIN) document.getElementById('dfCreateForm').classList.add('show');
                     dfLoadPosts();
-                    console.log('📰 DeepFeed загружен с примерами постов!');
+                    console.log('📰 DeepFeed загружен с комментариями!');
                 })();
             `);
             root.appendChild(script);
@@ -1609,27 +1529,23 @@
         // ===== ЗАГРУЗКА ЧАТА =====
         function loadChatWidget() {
             const root = document.getElementById('deepchat-widget');
-            if (!root) return;
-            if (root.dataset.loaded === 'true') return;
+            if (!root || root.dataset.loaded === 'true') return;
             root.dataset.loaded = 'true';
 
             const script = document.createElement('script');
             script.src = 'data:text/javascript;charset=utf-8,' + encodeURIComponent(`
                 (function() {
                     const root = document.getElementById('deepchat-widget');
-                    if (!root) return;
-                    if (root.dataset.loaded === 'true') return;
+                    if (!root || root.dataset.loaded === 'true') return;
                     root.dataset.loaded = 'true';
 
                     const DB = firebase.database();
                     const SITE_ID = '${SITE_ID}';
                     const USER = '${USER}';
                     const IS_ADMIN = ${IS_ROOM_ADMIN};
-
                     let CURRENT_ROOM = '${CURRENT_ROOM}';
                     let currentUser = USER;
 
-                    // ===== СТИЛИ ДЛЯ ЧАТА =====
                     const style = document.createElement('style');
                     style.textContent = \`
                         #deepchat-widget * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1753,9 +1669,7 @@
                             font-size: 0.8rem;
                             cursor: pointer;
                         }
-                        #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg .dc-msg-buttons .dc-btn-item:hover {
-                            background: #ffa033;
-                        }
+                        #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg .dc-msg-buttons .dc-btn-item:hover { background: #ffa033; }
                         #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg .dc-msg-hashtags {
                             display: flex;
                             flex-wrap: wrap;
@@ -1797,6 +1711,29 @@
                             border-color: #6a1a1a;
                             color: #ff6666;
                         }
+                        #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg .dc-msg-footer {
+                            display: flex;
+                            gap: 12px;
+                            margin-top: 6px;
+                            padding-top: 6px;
+                            border-top: 1px solid #1a1a2a;
+                            flex-wrap: wrap;
+                        }
+                        #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg .dc-comment-btn {
+                            background: #1a1a2a;
+                            border: 1px solid #2a2a3a;
+                            color: #66aaff;
+                            padding: 0 12px;
+                            border-radius: 40px;
+                            font-size: 0.55rem;
+                            cursor: pointer;
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 4px;
+                        }
+                        #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg .dc-comment-btn:hover {
+                            background: #2a2a3a;
+                        }
                         #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input {
                             padding: 8px 10px;
                             background: #0e0e18;
@@ -1829,9 +1766,7 @@
                             cursor: pointer;
                             font-size: 0.8rem;
                         }
-                        #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-input-row button:hover {
-                            background: #ffa033;
-                        }
+                        #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-input-row button:hover { background: #ffa033; }
                         #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-file-row {
                             margin-top: 4px;
                         }
@@ -1854,9 +1789,7 @@
                             margin-top: 4px;
                             border: 1px solid #3a3a50;
                         }
-                        #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-file-row .dc-preview.show {
-                            display: flex;
-                        }
+                        #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-file-row .dc-preview.show { display: flex; }
                         #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-file-row .dc-preview img {
                             width: 28px;
                             height: 28px;
@@ -2016,42 +1949,20 @@
                         #deepchat-widget ::-webkit-scrollbar-track { background: transparent; }
                         #deepchat-widget ::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 4px; }
                         @media (max-width: 640px) {
-                            #deepchat-widget .dc-chat-root .dc-chat-panel {
-                                height: 45vh;
-                                min-height: 250px;
-                            }
-                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg .dc-msg-frame iframe {
-                                height: 160px;
-                            }
-                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-input-row input {
-                                font-size: 0.75rem;
-                                padding: 6px 12px;
-                            }
-                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg {
-                                padding: 8px 10px;
-                            }
+                            #deepchat-widget .dc-chat-root .dc-chat-panel { height: 45vh; min-height: 250px; }
+                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg .dc-msg-frame iframe { height: 160px; }
+                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-input-row input { font-size: 0.75rem; padding: 6px 12px; }
+                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg { padding: 8px 10px; }
                         }
                         @media (max-width: 400px) {
-                            #deepchat-widget .dc-chat-root .dc-chat-panel {
-                                height: 40vh;
-                                min-height: 200px;
-                            }
-                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg .dc-msg-frame iframe {
-                                height: 130px;
-                            }
-                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-input-row input {
-                                font-size: 0.7rem;
-                                padding: 4px 10px;
-                            }
-                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-input-row button {
-                                padding: 0 10px;
-                                font-size: 0.7rem;
-                            }
+                            #deepchat-widget .dc-chat-root .dc-chat-panel { height: 40vh; min-height: 200px; }
+                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-messages .dc-msg .dc-msg-frame iframe { height: 130px; }
+                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-input-row input { font-size: 0.7rem; padding: 4px 10px; }
+                            #deepchat-widget .dc-chat-root .dc-chat-panel .dc-chat-input .dc-input-row button { padding: 0 10px; font-size: 0.7rem; }
                         }
                     \`;
                     root.appendChild(style);
 
-                    // ===== КОНТЕЙНЕР =====
                     const chatRoot = document.createElement('div');
                     chatRoot.className = 'dc-chat-root';
                     chatRoot.id = 'dcChatRoot';
@@ -2081,7 +1992,6 @@
                     \`;
                     root.appendChild(chatRoot);
 
-                    // ===== ЛОГИКА ЧАТА =====
                     let editingId = null;
                     const msgRef = DB.ref('sites/' + SITE_ID + '/rooms/' + CURRENT_ROOM + '/messages');
 
@@ -2093,7 +2003,6 @@
                         const previewImg = document.getElementById('dcPreviewImg');
                         const pendingImage = preview && preview.classList.contains('show') ? previewImg.src : null;
                         if (!text && !pendingImage) return;
-
                         const data = {
                             nick: currentUser,
                             text: text || '📷',
@@ -2107,12 +2016,8 @@
                             hashtags: [],
                             edited: false
                         };
-
                         const linkMatch = (text || '').match(/(https?:\\/\\/[^\\s]+)/);
-                        if (linkMatch) {
-                            data.link = linkMatch[1];
-                        }
-
+                        if (linkMatch) data.link = linkMatch[1];
                         msgRef.push(data);
                         input.value = '';
                         dcRemoveImage();
@@ -2152,48 +2057,30 @@
                     function renderMessage(m) {
                         const messagesDiv = document.getElementById('dcMessages');
                         if (!messagesDiv) return;
-
                         const div = document.createElement('div');
                         div.className = 'dc-msg';
+                        div.dataset.id = m.id;
 
-                        let marqueeHtml = '';
-                        if (m.marquee) {
-                            marqueeHtml = \`<div class="dc-marquee"><span>\${escapeHtml(m.marquee)}</span></div>\`;
-                        }
-
+                        let marqueeHtml = m.marquee ? \`<div class="dc-marquee"><span>\${escapeHtml(m.marquee)}</span></div>\` : '';
                         let textHtml = escapeHtml(m.text || '');
                         const linkMatch = (m.text || '').match(/(https?:\\/\\/[^\\s]+)/);
                         if (linkMatch && m.link) {
                             textHtml = textHtml.replace(linkMatch[1], \`<span style="color:#555;font-size:0.7rem;">\${linkMatch[1]}</span>\`);
                         }
-
-                        let imgHtml = '';
-                        if (m.img) {
-                            imgHtml = \`<img class="dc-msg-img" src="\${m.img}" onclick="window.open(this.src)">\`;
-                        }
-
+                        let imgHtml = m.img ? \`<img class="dc-msg-img" src="\${m.img}" onclick="window.open(this.src)">\` : '';
                         let buttonsHtml = '';
                         if (m.buttons && m.buttons.length > 0) {
                             buttonsHtml = '<div class="dc-msg-buttons">';
                             m.buttons.forEach(btn => {
-                                if (btn.url) {
-                                    buttonsHtml += \`<a href="\${escapeHtml(btn.url)}" target="_blank" class="dc-btn-item">\${escapeHtml(btn.label || '🔗 Перейти')}</a>\`;
-                                }
+                                if (btn.url) buttonsHtml += \`<a href="\${escapeHtml(btn.url)}" target="_blank" class="dc-btn-item">\${escapeHtml(btn.label || '🔗 Перейти')}</a>\`;
                             });
                             buttonsHtml += '</div>';
                         }
-
-                        let frameHtml = '';
-                        if (m.link) {
-                            frameHtml = \`<div class="dc-msg-frame"><iframe src="\${m.link}" sandbox="allow-scripts allow-same-origin allow-popups"></iframe></div>\`;
-                        }
-
+                        let frameHtml = m.link ? \`<div class="dc-msg-frame"><iframe src="\${m.link}" sandbox="allow-scripts allow-same-origin allow-popups"></iframe></div>\` : '';
                         let hashtagsHtml = '';
                         if (m.hashtags && m.hashtags.length > 0) {
                             hashtagsHtml = '<div class="dc-msg-hashtags">';
-                            m.hashtags.forEach(tag => {
-                                hashtagsHtml += \`<span class="dc-tag">\${escapeHtml(tag)}</span>\`;
-                            });
+                            m.hashtags.forEach(tag => hashtagsHtml += \`<span class="dc-tag">\${escapeHtml(tag)}</span>\`);
                             hashtagsHtml += '</div>';
                         }
 
@@ -2208,6 +2095,16 @@
                             actionsHtml += \`<button class="dc-del-btn" onclick="dcDeleteMsg('\${m.id}')">🗑</button>\`;
                         }
 
+                        // Счётчик комментариев
+                        const commentsRef = DB.ref('sites/' + SITE_ID + '/rooms/' + CURRENT_ROOM + '/messages/' + m.id + '/comments');
+                        commentsRef.once('value', snap => {
+                            if (snap.exists()) {
+                                const count = Object.keys(snap.val()).length;
+                                const el = div.querySelector('.dc-comment-count');
+                                if (el) el.textContent = count;
+                            }
+                        });
+
                         div.innerHTML = \`
                             \${marqueeHtml}
                             <div>
@@ -2221,8 +2118,12 @@
                             \${frameHtml}
                             \${hashtagsHtml}
                             <div class="dc-msg-actions">\${actionsHtml}</div>
+                            <div class="dc-msg-footer">
+                                <button class="dc-comment-btn" onclick="openComments('chat','\${m.id}','\${escapeHtml(m.text || 'Пост').slice(0,30)}')">
+                                    💬 <span class="dc-comment-count">0</span>
+                                </button>
+                            </div>
                         \`;
-
                         messagesDiv.appendChild(div);
                     }
 
@@ -2235,10 +2136,7 @@
 
                     window.dcReplyMsg = function(id, nick) {
                         const input = document.getElementById('dcMsgInput');
-                        if (input) {
-                            input.value = '@' + nick + ' ';
-                            input.focus();
-                        }
+                        if (input) { input.value = '@' + nick + ' '; input.focus(); }
                     };
 
                     window.dcDeleteMsg = function(id) {
@@ -2269,7 +2167,6 @@
                             </div>
                         \`;
                         document.body.appendChild(modal);
-
                         msgRef.child(id).once('value', snap => {
                             const m = snap.val();
                             if (!m) return;
@@ -2277,7 +2174,6 @@
                             document.getElementById('dcEditText').value = m.text || '';
                             document.getElementById('dcEditLink').value = m.link || '';
                             document.getElementById('dcEditHashtags').value = (m.hashtags || []).join(' ');
-
                             const container = document.getElementById('dcEditButtonsContainer');
                             container.innerHTML = '';
                             const btns = m.buttons || [];
@@ -2310,20 +2206,17 @@
 
                     window.dcSaveEdit = function() {
                         if (!editingId) return;
-
                         const marquee = document.getElementById('dcEditMarquee').value.trim();
                         const text = document.getElementById('dcEditText').value.trim();
                         const link = document.getElementById('dcEditLink').value.trim();
                         const hashtagsRaw = document.getElementById('dcEditHashtags').value.trim();
                         const hashtags = hashtagsRaw ? hashtagsRaw.split(/\\s+/).filter(t => t.startsWith('#')) : [];
-
                         const buttons = [];
                         document.querySelectorAll('#dcEditButtonsContainer .dc-btn-group').forEach(g => {
                             const label = g.querySelector('.dc-btn-label').value.trim();
                             const url = g.querySelector('.dc-btn-url').value.trim();
                             if (url) buttons.push({ label: label || '🔗 Перейти', url });
                         });
-
                         const updates = {
                             marquee: marquee || null,
                             text: text || '📝',
@@ -2333,7 +2226,6 @@
                             edited: true,
                             editedAt: Date.now()
                         };
-
                         msgRef.child(editingId).update(updates);
                         dcCloseEdit();
                     };
@@ -2373,26 +2265,19 @@
         // ======  ЗАПУСК  ======
         // ================================================================
 
-        // Загружаем ленту
         loadFeedWidget();
 
-        // Если есть активная комната, открываем её
         if (CURRENT_ROOM) {
             openChat(CURRENT_ROOM);
         }
 
-        // Загружаем комнаты в меню
         loadRoomsInSidebar();
-
-        // Загружаем чат-виджет (он будет готов к использованию)
         loadChatWidget();
 
-        console.log('🚀 DeepChat App загружен!');
-        console.log('🏷️ Сайт:', SITE_ID);
-        console.log('👤 Пользователь:', USER || 'не задан');
+        console.log('🚀 DeepChat App загружен с комментариями!');
         console.log('📰 Админ ленты (пароль 12345)');
-        console.log('💬 Админ комнат (пароль 67890)');
-        console.log('📝 Примеры постов добавлены автоматически!');
+        console.log('💬 Админ комнат (пароль 12345)');
+        console.log('💬 Комментарии работают!');
     })();
     </script>
 
